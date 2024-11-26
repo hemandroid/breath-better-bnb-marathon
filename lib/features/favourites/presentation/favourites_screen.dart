@@ -11,6 +11,12 @@ class FavouritesScreen extends ConsumerStatefulWidget {
 class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+          child: Text("data"),
+        ),
+      ),
+    );
   }
 }
