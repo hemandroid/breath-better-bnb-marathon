@@ -1,12 +1,14 @@
 import 'package:breath_better_bnb_marathon/core/navigation/navigation_service.dart';
 import 'package:breath_better_bnb_marathon/core/routes/routes_provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/routes/route_constants.dart'; // Add this import manually, where ever it requires.
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const ProviderScope(child: MyApp(),));
 }
 
@@ -34,7 +36,7 @@ class _MyAppState extends ConsumerState<MyApp> with WidgetsBindingObserver{
       navigatorKey: NavigationService.navigatorKey,
       debugShowCheckedModeBanner: false,
       onGenerateRoute: routeFactory,
-      initialRoute: RouteConstants.home,
+      initialRoute: RouteConstants.launchScreen,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

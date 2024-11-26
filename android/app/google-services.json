@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "498658915612",
+    "project_id": "breathbetterbnbmarathon",
+    "storage_bucket": "breathbetterbnbmarathon.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498658915612:android:98a47c3edf2cce2bcf36d9",
+        "android_client_info": {
+          "package_name": "com.example.breath_better_bnb_marathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOABQ1wyezd2J6ieGPWiOAt1amweS3ts4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

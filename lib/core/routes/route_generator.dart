@@ -3,6 +3,7 @@ import 'package:breath_better_bnb_marathon/core/widgets/no_connectivity.dart';
 import 'package:breath_better_bnb_marathon/features/favourites/presentation/favourites_screen.dart';
 import 'package:breath_better_bnb_marathon/features/history/presentation/history_screen.dart';
 import 'package:breath_better_bnb_marathon/features/home/presentation/home_screen.dart';
+import 'package:breath_better_bnb_marathon/features/launcher_screen.dart';
 import 'package:breath_better_bnb_marathon/features/precautions/presentation/precaution_detail_screen.dart';
 import 'package:breath_better_bnb_marathon/features/precautions/presentation/precautions_screen.dart';
 import 'package:flutter/material.dart';
@@ -12,8 +13,11 @@ Route<dynamic> generateRoute(RouteSettings settings, Ref ref) {
 
   // Use the appRoutes constants to compare in the switch
   switch (settings.name) {
+    case RouteConstants.launchScreen:
+      return MaterialPageRoute(builder: (_) => const LauncherScreen());
     case RouteConstants.home:
       return MaterialPageRoute(builder: (_) => const HomeScreen());
+
     case RouteConstants.history:
       return MaterialPageRoute(builder: (_) => const HistoryScreen());
     case RouteConstants.favourites:
